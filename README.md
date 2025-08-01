@@ -1,6 +1,7 @@
 # setup
 
 ## Run following commands in order to install relevant libraries and run GPT-J benchmark
+	- sudo su
 	- bash conda_install.sh 
 	- bash rust_install.sh
 	- git clone https://github.com/shoaibCS/inference-CXL.git
