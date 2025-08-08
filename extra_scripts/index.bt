@@ -1,7 +1,9 @@
 kretprobe:fragmentation_index{ 
-@kstack = kstack();
-print(@kstack);
-clear(@kstack); 
+//uncomment following lines to dump kernel stack
+
+//@kstack = kstack();
+//print(@kstack);
+//clear(@kstack); 
 
 
 @count = @count +1;
