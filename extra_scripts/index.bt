@@ -1,0 +1,9 @@
+kretprobe:fragmentation_index{ 
+@kstack = kstack();
+print(@kstack);
+clear(@kstack); 
+
+
+@count = @count +1;
+printf("\nfrag counter %llu index: %d\n",@count,retval); 
+}
