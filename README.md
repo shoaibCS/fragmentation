@@ -1,5 +1,3 @@
-# setup
-
 ## Run following commands in order to install relevant libraries and run GPT-J benchmark
 	- sudo su
 	- bash conda_install.sh 
@@ -7,7 +5,14 @@
 	- git clone https://github.com/shoaibCS/inference-CXL.git
 	- Move to relevant inference directory with this command 'cd inference-CXL/scripts/' 
 	- Install libraries with this command 'bash gptj.sh 1'                                                                        
-	- Run benchmark with this command 'bash gptj.sh 2'
+	- Run GPT-J benchmark with this command 'bash gptj.sh 2'
+    
+
+## Additional information
+
+    - setup_vm.sh contains the command used for creating VM for the experiments
+    - extra_scripts directory contains the run_fio.sh script used for collecting data
+    - visualization directory contains bw.py script used for generating the graph
 
 
 
