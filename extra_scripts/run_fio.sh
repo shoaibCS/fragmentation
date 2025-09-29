@@ -220,23 +220,11 @@ for ((rep = 1; rep <= REPS; rep++)); do
 	    ls > "$name-0s"
 #	    sleep 30
 
-#	    analyze_fragments $FS > "$name-30s"
-#	    sudo umount "$DEVICE"  
 	    ls  > "$name-30s" 
-#	    sudo mount "$DEVICE" /mnt/$FS 
-#	    sudo chmod 777 /mnt/$FS
-#	    analyze_fragments $FS > "$name-post_mount" 
 	    ls >  "$name-post_mount" 
 	    frag_count=$(cat "$name-trace" | grep index | grep -v "index: -1000" | wc -l)
 	    low_mem_count=$(cat "$name-trace" | grep index | grep "index: -1000" | wc -l)
 
-#	    echo "/mnt/x1" >> "$name-config"
-#	    xfs_info /mnt/x1 >> "$name-config" 
-#	    echo "-----------------------"  >> "$name-config" 
-#	    echo "/mnt/x2" >> "$name-config" 
-#	    xfs_info /mnt/x2 >> "$name-config" 
-#	    echo "-----------------------"  >> "$name-config"
-#	    echo "/mnt/x3" >> "$name-config" 
 
 #	    xfs_info /mnt/x3 >> "$name-config" 
 #	    echo "-----------------------"  >> "$name-config"
