@@ -163,7 +163,7 @@ for ((rep = 1; rep <= REPS; rep++)); do
 	    sudo swapoff /swap.img 
 
             # Fio command as one line
-            cmd="taskset -c 29-49 /home/femu/fio/fio --name=$EXP_NAME --directory=/mnt/x1 --bs=$BS_READ --iodepth=$i --rw=randwrite --ioengine=io_uring --numjobs=20 --size=30G --direct=1 --group_reporting &> $name"
+            cmd="taskset -c 29-49 /home/femu/fio/fio --name=$EXP_NAME --directory=/mnt/x1 --bs=$BS_READ --iodepth=$i --rw=randwrite --ioengine=io_uring --numjobs=20 --size=30G --direct=0 --group_reporting &> $name"
 #tee $name"	
             echo "Executing command: $cmd"
 	    echo "/mnt/x1" >> "$name-config"
