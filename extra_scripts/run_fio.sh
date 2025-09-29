@@ -226,20 +226,6 @@ for ((rep = 1; rep <= REPS; rep++)); do
 	    low_mem_count=$(cat "$name-trace" | grep index | grep "index: -1000" | wc -l)
 
 
-#	    xfs_info /mnt/x3 >> "$name-config" 
-#	    echo "-----------------------"  >> "$name-config"
-#	    free -g >> "$name-config"
-#	    echo "-----------------------"  >> "$name-config"
-#	    nproc >> "$name-config"
-#	    echo "-----------------------"  >> "$name-config"
-#	    sudo bpftrace aa.bt  &>> "$name-config"
-#	    echo "-----------------------"  >> "$name-config"
-#	    df -Th  >> "$name-config" 
-#	    echo "-----------------------"  >> "$name-config"
-#	    echo "DIRTY RATIO "  >> "$name-config" 
-#	    cat /proc/sys/vm/dirty_ratio  >> "$name-config" 
-#	    echo "-----------------------"  >> "$name-config" 
-
 
 
 
